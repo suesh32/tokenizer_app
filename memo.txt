@@ -1,0 +1,7 @@
+docker run -d -p 8888:8888 jupyter/tensorflow-notebook start-notebook.sh --NotebookApp.token=''
+docker exec -it  e4d4  /bin/bash
+  pip3 install janome
+
+http://mocobeta.github.io/janome/
+http://fizzyroom.org/2016/04/30/day25/
+http://pandas.pydata.org/pandas-docs/stable/api.html#id1

@@ -11765,7 +11765,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">site_csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;site.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;cp932&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">site_csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;採用不採用リスト.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;cp932&quot;</span><span class="p">)</span>
 <span class="n">site_csv</span>
 </pre></div>
 
@@ -11785,50 +11785,222 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>name</th>
+      <th>flg</th>
+      <th>date</th>
       <th>url</th>
+      <th>title</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>富、名声、力 かつてこの世の全てを手に入れた男 “海賊王・ゴールド・ロジャー”</td>
-      <td>https://hoge.com/aaaaa</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://style.nikkei.com/article/DGXMZO12054150...</td>
+      <td>AIとスポーツの融合　カギは「レジェンドの知」継承</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>彼の死に際に放った一言は全世界の人々を海へと駆り立てた。</td>
-      <td>https://hogehoge.com/bbbbbb</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.nikkei.com/article/DGKKZO12543610U7...</td>
+      <td>〈法トーク〉フィンテック・ＡＩ関連に意欲 弁護士　岩倉正和氏</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>『おれの財宝か？欲しけりゃくれてやるぜ・・・\r\n探してみろこの世の全てをそこに置いてきた』</td>
-      <td>https://hogehoge.com/ccccc</td>
+      <td>0</td>
+      <td>2016/02/01</td>
+      <td>http://www.nikkei.com/article/DGKKASFK25H41_R3...</td>
+      <td>ＡＩ特許 ４年で７割増　米中突出 日本は減</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>世はまさに大海賊時代！！</td>
-      <td>https://hogehoge.com/ddddd</td>
+      <td>0</td>
+      <td>2016/01/31</td>
+      <td>http://www.nikkei.com/article/DGKKZO12336510R3...</td>
+      <td>人工知能の使い方</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>受け継がれる意志 時代のうねり 人の夢 これらはとめる事のできないものだ。</td>
-      <td>https://fugafuga.org/iiiiii</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.excite.co.jp/News/column_g/20170206...</td>
+      <td>人類が危ない！？滅ぼされないための正しい人工知能との付き合い方</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>人々が自由の答えを求める限りそれらは決してとどまることは無い！！</td>
-      <td>https://fugafuga.org/eeeeee</td>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>http://www.gizmodo.jp/2017/02/lets-see-how-pai...</td>
+      <td>人が塗る時代は過去になるのか？ 人工知能が『魔法つかいプリキュア！』を塗る</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>世界は・・・そうだ！ 自由を求め選ぶべき世界が目の前に広々と横たわっている</td>
-      <td>https://foo.bar.jp/uuu/</td>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>https://www.bloomberg.co.jp/news/articles/2017...</td>
+      <td>100％人工知能のヘッジファンド誕生－株取引に人間の感情は邪魔か</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>終らぬ夢が・・・お前たちの導き手ならば、超えてゆけ！！ものが信念の旗の下に！！！</td>
-      <td>https://foo.bar.jp/ffffffff/</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://thebridge.jp/2017/02/how-ai-will-transf...</td>
+      <td>人工知能による会話型教育が浸透するかーー2017年、AIは教育業界をどう変えるか？</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>http://dd.hokkaido-np.co.jp/news/science/scien...</td>
+      <td>人工知能・AIによる人事評価は公平か－北海道大学の裁判劇とワークショップから　１－舞台は西暦...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>https://www.advertimes.com/20170204/article243...</td>
+      <td>松尾先生、人工知能と広告の未来はどっちですか？【後編】</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>2017/02/23</td>
+      <td>http://www.nikkei.com/article/DGXLASDZ22HST_S7...</td>
+      <td>イオン、従業員の質問にＡＩが回答　接客能力高める</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>2017/02/22</td>
+      <td>http://www.nikkei.com/article/DGXLASFB06HLT_S7...</td>
+      <td>高速道の除雪、ＡＩで効率化　東日本高速</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>2017/02/21</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02210...</td>
+      <td>ミツバグループ、グローバル53社の人事評価でAI活用</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.nikkei.com/article/DGXLZO13144060Q7...</td>
+      <td>ローソン、健康志向に応じ商品提案　ＬＩＮＥでＡＩが対応</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02200...</td>
+      <td>機械学習を中堅中小にも、PBCがERP「Dynamics NAV」新版</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>分析モデルの開発、展開を機械学習で自動化　IBMが提供へ</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>NTTドコモと東京無線が“ウーバー対抗策”、AIでタクシー需要を予測</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLASGG18H15_Z1...</td>
+      <td>ＡＩ用スパコン、夏ごろから稼働　東工大</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLZO13104170Z1...</td>
+      <td>オンキヨー、ＡＩ家電に100億円投資　20年度に売上高400億円</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>GoogleのAIライブラリ「TensorFlow」がVer.1.0に　高速化してより柔軟に...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLASGM17H8D_X1...</td>
+      <td>独ボッシュ、ＩＢＭとＩｏＴで提携　ワトソン活用</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>マイクロソフト、AIとロボットで接客するためのクラウドサービス</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLZO13076690X1...</td>
+      <td>ユニクロのネット通販、ＡＩがお薦め商品提案　米で実験</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>Microsoft、"ドローンのAI学習シミュレーターをオープンソース公開"</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>IBM、Watson活用のコンテンツ管理ツール「Watson Content Hub」を発表</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://news.mynavi.jp/news/2017/02/15/183/</td>
+      <td>人工知能を活用したFXサービスを目指して日本マイクロソフトとSBIグループ</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://monoist.atmarkit.co.jp/mn/articles/1702...</td>
+      <td>官民が連携し、先進型AI技術の研究ラボを設立</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.sankeibiz.jp/business/news/170215/p...</td>
+      <td>問い合わせ内容の可視化と人工知能（AI）技術を融合エネルギー事業者に特化したAIチャットサー...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.jiji.com/jc/article?k=000000069.000...</td>
+      <td>アプリ開発/制作のゆめみ、株式会社セレスと人工知能（AI）及び機械学習に関する研究所、 ビジ...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://venturetimes.jp/venture-news/ai/17506.html</td>
+      <td>サイバーの人工知能のアドテクノロジー活用を図る「AI Lab」、東京工業大学と産学連携</td>
     </tr>
   </tbody>
 </table>
@@ -11847,14 +12019,14 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">Tokenizer</span><span class="p">()</span>
-<span class="n">newlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">word_vector_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">site_csv</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">newdic</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">t</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]):</span>
+    <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">t</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]):</span>
         <span class="n">hinshi</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">part_of_speech</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
         <span class="k">if</span><span class="p">(</span><span class="n">hinshi</span> <span class="o">==</span> <span class="s1">&#39;名詞&#39;</span><span class="p">):</span>
-<span class="c1">#        print(token)</span>
+<span class="c1">#            print(token)</span>
             <span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">surface</span><span class="p">)</span>
     <span class="n">word_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 <span class="c1">#    print(list)</span>
@@ -11862,11 +12034,12 @@ div#notebook {
         <span class="n">newdic</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===============================&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">newdic</span><span class="p">)</span>
-    <span class="n">newlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newdic</span><span class="p">)</span>
+<span class="c1">#    newdic[&#39;url&#39;] = row[&#39;url&#39;]</span>
+<span class="c1">#    newdic[&#39;date&#39;] = row[&#39;date&#39;]</span>
+<span class="c1">#    newdic[&#39;flg&#39;] = row[&#39;flg&#39;]</span>
+    <span class="n">word_vector_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newdic</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------------&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">newlist</span><span class="p">)</span>
-<span class="c1">#    df = pd.DataFrame(newlist)</span>
-<span class="c1">#    print(df.head())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word_vector_list</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11880,23 +12053,67 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>===============================
-{&#39;名声&#39;: 1, &#39;富&#39;: 1, &#39;ゴールド&#39;: 1, &#39;この世&#39;: 1, &#39;手&#39;: 1, &#39;男&#39;: 1, &#39;王&#39;: 1, &#39;全て&#39;: 1, &#39;力&#39;: 1, &#39;ロジャー&#39;: 1, &#39;海賊&#39;: 1}
+{&#39;スポーツ&#39;: 1, &#39;カギ&#39;: 1, &#39;AI&#39;: 1, &#39;レジェンド&#39;: 1, &#39;知&#39;: 1, &#39;継承&#39;: 1, &#39;融合&#39;: 1}
 ===============================
-{&#39;世界&#39;: 1, &#39;彼&#39;: 1, &#39;人々&#39;: 1, &#39;一言&#39;: 1, &#39;死に際&#39;: 1, &#39;海&#39;: 1}
+{&#39;法&#39;: 1, &#39;意欲&#39;: 1, &#39;関連&#39;: 1, &#39;弁護士&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;正和&#39;: 1, &#39;テック&#39;: 1, &#39;トーク&#39;: 1, &#39;フィン&#39;: 1, &#39;氏&#39;: 1, &#39;岩倉&#39;: 1}
 ===============================
-{&#39;そこ&#39;: 1, &#39;おれ&#39;: 1, &#39;財宝&#39;: 1, &#39;この世&#39;: 1, &#39;全て&#39;: 1}
+{&#39;日本&#39;: 1, &#39;中&#39;: 1, &#39;突出&#39;: 1, &#39;４&#39;: 1, &#39;７&#39;: 1, &#39;年&#39;: 1, &#39;特許&#39;: 1, &#39;割&#39;: 1, &#39;減&#39;: 1, &#39;増&#39;: 1, &#39;米&#39;: 1}
 ===============================
-{&#39;時代&#39;: 1, &#39;世&#39;: 1, &#39;海賊&#39;: 1}
+{&#39;使い方&#39;: 1, &#39;知能&#39;: 1, &#39;人工&#39;: 1}
 ===============================
-{&#39;人&#39;: 1, &#39;事&#39;: 1, &#39;もの&#39;: 1, &#39;意志&#39;: 1, &#39;時代&#39;: 1, &#39;夢&#39;: 1, &#39;これら&#39;: 1, &#39;うねり&#39;: 1}
+{&#39;ため&#39;: 1, &#39;知能&#39;: 1, &#39;人類&#39;: 1, &#39;方&#39;: 1, &#39;人工&#39;: 1}
 ===============================
-{&#39;自由&#39;: 1, &#39;人々&#39;: 1, &#39;こと&#39;: 1, &#39;答え&#39;: 1, &#39;それら&#39;: 1, &#39;限り&#39;: 1}
+{&#39;の&#39;: 1, &#39;人&#39;: 1, &#39;時代&#39;: 1, &#39;知能&#39;: 1, &#39;プリキュア&#39;: 1, &#39;過去&#39;: 1, &#39;人工&#39;: 1, &#39;魔法つかい&#39;: 1}
 ===============================
-{&#39;世界&#39;: 2, &#39;自由&#39;: 1, &#39;前&#39;: 1, &#39;目&#39;: 1}
+{&#39;－&#39;: 1, &#39;誕生&#39;: 1, &#39;株&#39;: 1, &#39;取引&#39;: 1, &#39;人間&#39;: 1, &#39;邪魔&#39;: 1, &#39;ヘッジファンド&#39;: 1, &#39;人工&#39;: 1, &#39;100&#39;: 1, &#39;知能&#39;: 1, &#39;％&#39;: 1, &#39;感情&#39;: 1}
 ===============================
-{&#39;たち&#39;: 1, &#39;夢&#39;: 1, &#39;下&#39;: 1, &#39;信念&#39;: 1, &#39;お前&#39;: 1, &#39;手&#39;: 1, &#39;旗&#39;: 1, &#39;もの&#39;: 1}
+{&#39;知能&#39;: 1, &#39;2017&#39;: 1, &#39;業界&#39;: 1, &#39;教育&#39;: 2, &#39;年&#39;: 1, &#39;AI&#39;: 1, &#39;会話&#39;: 1, &#39;浸透&#39;: 1, &#39;型&#39;: 1, &#39;人工&#39;: 1, &#39;ーー&#39;: 1}
+===============================
+{&#39;－&#39;: 2, &#39;劇&#39;: 1, &#39;北海道大学&#39;: 1, &#39;評価&#39;: 1, &#39;年&#39;: 1, &#39;舞台&#39;: 1, &#39;裁判&#39;: 1, &#39;公平&#39;: 1, &#39;2030&#39;: 1, &#39;西暦&#39;: 1, &#39;人工&#39;: 1, &#39;知能&#39;: 1, &#39;ワークショップ&#39;: 1, &#39;AI&#39;: 1, &#39;人事&#39;: 1, &#39;１&#39;: 1}
+===============================
+{&#39;人工&#39;: 1, &#39;先生&#39;: 1, &#39;どっち&#39;: 1, &#39;知能&#39;: 1, &#39;後編&#39;: 1, &#39;広告&#39;: 1, &#39;未来&#39;: 1, &#39;松尾&#39;: 1}
+===============================
+{&#39;質問&#39;: 1, &#39;員&#39;: 1, &#39;接客&#39;: 1, &#39;従業&#39;: 1, &#39;能力&#39;: 1, &#39;回答&#39;: 1, &#39;イオン&#39;: 1, &#39;ＡＩ&#39;: 1}
+===============================
+{&#39;効率&#39;: 1, &#39;東日本&#39;: 1, &#39;道&#39;: 1, &#39;除雪&#39;: 1, &#39;高速&#39;: 2, &#39;化&#39;: 1, &#39;ＡＩ&#39;: 1}
+===============================
+{&#39;人事&#39;: 1, &#39;評価&#39;: 1, &#39;グループ&#39;: 1, &#39;AI&#39;: 1, &#39;社&#39;: 1, &#39;活用&#39;: 1, &#39;53&#39;: 1, &#39;グローバル&#39;: 1, &#39;ミツバ&#39;: 1}
+===============================
+{&#39;対応&#39;: 1, &#39;提案&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;ローソン&#39;: 1, &#39;健康&#39;: 1, &#39;ＬＩＮＥ&#39;: 1, &#39;商品&#39;: 1, &#39;志向&#39;: 1}
+===============================
+{&#39;PBC&#39;: 1, &#39;学習&#39;: 1, &#39;Dynamics&#39;: 1, &#39;NAV&#39;: 1, &#39;機械&#39;: 1, &#39;中堅&#39;: 1, &#39;中小&#39;: 1, &#39;新版&#39;: 1, &#39;ERP&#39;: 1}
+===============================
+{&#39;IBM&#39;: 1, &#39;提供&#39;: 1, &#39;学習&#39;: 1, &#39;展開&#39;: 1, &#39;機械&#39;: 1, &#39;モデル&#39;: 1, &#39;開発&#39;: 1, &#39;自動&#39;: 1, &#39;分析&#39;: 1, &#39;化&#39;: 1}
+===============================
+{&#39;NTT&#39;: 1, &#39;無線&#39;: 1, &#39;策&#39;: 1, &#39;ウー&#39;: 1, &#39;予測&#39;: 1, &#39;ドコモ&#39;: 1, &#39;AI&#39;: 1, &#39;バー&#39;: 1, &#39;需要&#39;: 1, &#39;タクシー&#39;: 1, &#39;東京&#39;: 1, &#39;対抗&#39;: 1}
+===============================
+{&#39;稼働&#39;: 1, &#39;用&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;夏&#39;: 1, &#39;東工大&#39;: 1, &#39;スパコン&#39;: 1, &#39;ごろ&#39;: 1}
+===============================
+{&#39;20&#39;: 1, &#39;投資&#39;: 1, &#39;売上&#39;: 1, &#39;400&#39;: 1, &#39;年度&#39;: 1, &#39;円&#39;: 2, &#39;億&#39;: 2, &#39;100&#39;: 1, &#39;高&#39;: 1, &#39;家電&#39;: 1, &#39;オンキヨー&#39;: 1}
+===============================
+{&#39;.&#39;: 2, &#39;Ver&#39;: 1, &#39;0&#39;: 1, &#39;Google&#39;: 1, &#39;化&#39;: 1, &#39;柔軟&#39;: 1, &#39;TensorFlow&#39;: 1, &#39;追加&#39;: 1, &#39;API&#39;: 1, &#39;ライブラリ&#39;: 1, &#39;AI&#39;: 1, &#39;高速&#39;: 1, &#39;1&#39;: 1}
+===============================
+{&#39;独&#39;: 1, &#39;ワトソン&#39;: 1, &#39;ＩＢＭ&#39;: 1, &#39;ＩｏＴ&#39;: 1, &#39;ボッシュ&#39;: 1, &#39;活用&#39;: 1, &#39;提携&#39;: 1}
+===============================
+{&#39;サービス&#39;: 1, &#39;マイクロソフト&#39;: 1, &#39;ため&#39;: 1, &#39;ロボット&#39;: 1, &#39;AI&#39;: 1, &#39;接客&#39;: 1, &#39;ウド&#39;: 1, &#39;クラ&#39;: 1}
+===============================
+{&#39;提案&#39;: 1, &#39;通販&#39;: 1, &#39;クロ&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;ユニ&#39;: 1, &#39;商品&#39;: 1, &#39;ネット&#39;: 1, &#39;実験&#39;: 1, &#39;米&#39;: 1}
+===============================
+{&#39;ソース&#39;: 1, &#39;学習&#39;: 1, &#39;シミュレーター&#39;: 1, &#39;AI&#39;: 1, &#39;オープン&#39;: 1, &#39;Microsoft&#39;: 1, &#39;ローン&#39;: 1, &#39;公開&#39;: 1, &#39;&#34;&#39;: 2}
+===============================
+{&#39;IBM&#39;: 1, &#39;コンテンツ&#39;: 1, &#39;管理&#39;: 1, &#39;ツール&#39;: 1, &#39;Watson&#39;: 2, &#39;発表&#39;: 1, &#39;Hub&#39;: 1, &#39;活用&#39;: 1, &#39;Content&#39;: 1}
+===============================
+{&#39;日本&#39;: 1, &#39;サービス&#39;: 1, &#39;SBI&#39;: 1, &#39;マイクロソフト&#39;: 1, &#39;グループ&#39;: 1, &#39;知能&#39;: 1, &#39;活用&#39;: 1, &#39;FX&#39;: 1, &#39;人工&#39;: 1}
+===============================
+{&#39;官民&#39;: 1, &#39;技術&#39;: 1, &#39;先進&#39;: 1, &#39;設立&#39;: 1, &#39;型&#39;: 1, &#39;AI&#39;: 1, &#39;研究&#39;: 1, &#39;連携&#39;: 1, &#39;ラボ&#39;: 1}
+===============================
+{&#39;技術&#39;: 1, &#39;可視&#39;: 1, &#39;開始&#39;: 1, &#39;チャット&#39;: 1, &#39;エネルギー&#39;: 1, &#39;化&#39;: 2, &#39;事業&#39;: 1, &#39;サービス&#39;: 1, &#39;特&#39;: 1, &#39;提供&#39;: 1, &#39;人工&#39;: 1, &#39;問い合わせ&#39;: 1, &#39;知能&#39;: 1, &#39;AI&#39;: 2, &#39;内容&#39;: 1, &#39;者&#39;: 1, &#39;融合&#39;: 1}
+===============================
+{&#39;知能&#39;: 1, &#39;研究所&#39;: 1, &#39;設立&#39;: 1, &#39;学習&#39;: 1, &#39;機械&#39;: 1, &#39;制作&#39;: 1, &#39;人工&#39;: 1, &#39;/&#39;: 1, &#39;セレス&#39;: 1, &#39;開発&#39;: 1, &#39;アプリ&#39;: 1, &#39;サイエンス&#39;: 1, &#39;AI&#39;: 2, &#39;株式会社&#39;: 1, &#39;共同&#39;: 1, &#39;ビジネス&#39;: 1, &#39;ラボ&#39;: 1}
+===============================
+{&#39;テクノロジー&#39;: 1, &#39;知能&#39;: 1, &#39;活用&#39;: 1, &#39;連携&#39;: 1, &#39;産学&#39;: 1, &#39;サイバー&#39;: 1, &#39;AI&#39;: 1, &#39;東京工業大学&#39;: 1, &#39;アド&#39;: 1, &#39;人工&#39;: 1, &#39;Lab&#39;: 1}
 -------------------------------
-[{&#39;名声&#39;: 1, &#39;富&#39;: 1, &#39;ゴールド&#39;: 1, &#39;この世&#39;: 1, &#39;手&#39;: 1, &#39;男&#39;: 1, &#39;王&#39;: 1, &#39;全て&#39;: 1, &#39;力&#39;: 1, &#39;ロジャー&#39;: 1, &#39;海賊&#39;: 1}, {&#39;世界&#39;: 1, &#39;彼&#39;: 1, &#39;人々&#39;: 1, &#39;一言&#39;: 1, &#39;死に際&#39;: 1, &#39;海&#39;: 1}, {&#39;そこ&#39;: 1, &#39;おれ&#39;: 1, &#39;財宝&#39;: 1, &#39;この世&#39;: 1, &#39;全て&#39;: 1}, {&#39;時代&#39;: 1, &#39;世&#39;: 1, &#39;海賊&#39;: 1}, {&#39;人&#39;: 1, &#39;事&#39;: 1, &#39;もの&#39;: 1, &#39;意志&#39;: 1, &#39;時代&#39;: 1, &#39;夢&#39;: 1, &#39;これら&#39;: 1, &#39;うねり&#39;: 1}, {&#39;自由&#39;: 1, &#39;人々&#39;: 1, &#39;こと&#39;: 1, &#39;答え&#39;: 1, &#39;それら&#39;: 1, &#39;限り&#39;: 1}, {&#39;世界&#39;: 2, &#39;自由&#39;: 1, &#39;前&#39;: 1, &#39;目&#39;: 1}, {&#39;たち&#39;: 1, &#39;夢&#39;: 1, &#39;下&#39;: 1, &#39;信念&#39;: 1, &#39;お前&#39;: 1, &#39;手&#39;: 1, &#39;旗&#39;: 1, &#39;もの&#39;: 1}]
+[{&#39;スポーツ&#39;: 1, &#39;カギ&#39;: 1, &#39;AI&#39;: 1, &#39;レジェンド&#39;: 1, &#39;知&#39;: 1, &#39;継承&#39;: 1, &#39;融合&#39;: 1}, {&#39;法&#39;: 1, &#39;意欲&#39;: 1, &#39;関連&#39;: 1, &#39;弁護士&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;正和&#39;: 1, &#39;テック&#39;: 1, &#39;トーク&#39;: 1, &#39;フィン&#39;: 1, &#39;氏&#39;: 1, &#39;岩倉&#39;: 1}, {&#39;日本&#39;: 1, &#39;中&#39;: 1, &#39;突出&#39;: 1, &#39;４&#39;: 1, &#39;７&#39;: 1, &#39;年&#39;: 1, &#39;特許&#39;: 1, &#39;割&#39;: 1, &#39;減&#39;: 1, &#39;増&#39;: 1, &#39;米&#39;: 1}, {&#39;使い方&#39;: 1, &#39;知能&#39;: 1, &#39;人工&#39;: 1}, {&#39;ため&#39;: 1, &#39;知能&#39;: 1, &#39;人類&#39;: 1, &#39;方&#39;: 1, &#39;人工&#39;: 1}, {&#39;の&#39;: 1, &#39;人&#39;: 1, &#39;時代&#39;: 1, &#39;知能&#39;: 1, &#39;プリキュア&#39;: 1, &#39;過去&#39;: 1, &#39;人工&#39;: 1, &#39;魔法つかい&#39;: 1}, {&#39;－&#39;: 1, &#39;誕生&#39;: 1, &#39;株&#39;: 1, &#39;取引&#39;: 1, &#39;人間&#39;: 1, &#39;邪魔&#39;: 1, &#39;ヘッジファンド&#39;: 1, &#39;人工&#39;: 1, &#39;100&#39;: 1, &#39;知能&#39;: 1, &#39;％&#39;: 1, &#39;感情&#39;: 1}, {&#39;知能&#39;: 1, &#39;2017&#39;: 1, &#39;業界&#39;: 1, &#39;教育&#39;: 2, &#39;年&#39;: 1, &#39;AI&#39;: 1, &#39;会話&#39;: 1, &#39;浸透&#39;: 1, &#39;型&#39;: 1, &#39;人工&#39;: 1, &#39;ーー&#39;: 1}, {&#39;－&#39;: 2, &#39;劇&#39;: 1, &#39;北海道大学&#39;: 1, &#39;評価&#39;: 1, &#39;年&#39;: 1, &#39;舞台&#39;: 1, &#39;裁判&#39;: 1, &#39;公平&#39;: 1, &#39;2030&#39;: 1, &#39;西暦&#39;: 1, &#39;人工&#39;: 1, &#39;知能&#39;: 1, &#39;ワークショップ&#39;: 1, &#39;AI&#39;: 1, &#39;人事&#39;: 1, &#39;１&#39;: 1}, {&#39;人工&#39;: 1, &#39;先生&#39;: 1, &#39;どっち&#39;: 1, &#39;知能&#39;: 1, &#39;後編&#39;: 1, &#39;広告&#39;: 1, &#39;未来&#39;: 1, &#39;松尾&#39;: 1}, {&#39;質問&#39;: 1, &#39;員&#39;: 1, &#39;接客&#39;: 1, &#39;従業&#39;: 1, &#39;能力&#39;: 1, &#39;回答&#39;: 1, &#39;イオン&#39;: 1, &#39;ＡＩ&#39;: 1}, {&#39;効率&#39;: 1, &#39;東日本&#39;: 1, &#39;道&#39;: 1, &#39;除雪&#39;: 1, &#39;高速&#39;: 2, &#39;化&#39;: 1, &#39;ＡＩ&#39;: 1}, {&#39;人事&#39;: 1, &#39;評価&#39;: 1, &#39;グループ&#39;: 1, &#39;AI&#39;: 1, &#39;社&#39;: 1, &#39;活用&#39;: 1, &#39;53&#39;: 1, &#39;グローバル&#39;: 1, &#39;ミツバ&#39;: 1}, {&#39;対応&#39;: 1, &#39;提案&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;ローソン&#39;: 1, &#39;健康&#39;: 1, &#39;ＬＩＮＥ&#39;: 1, &#39;商品&#39;: 1, &#39;志向&#39;: 1}, {&#39;PBC&#39;: 1, &#39;学習&#39;: 1, &#39;Dynamics&#39;: 1, &#39;NAV&#39;: 1, &#39;機械&#39;: 1, &#39;中堅&#39;: 1, &#39;中小&#39;: 1, &#39;新版&#39;: 1, &#39;ERP&#39;: 1}, {&#39;IBM&#39;: 1, &#39;提供&#39;: 1, &#39;学習&#39;: 1, &#39;展開&#39;: 1, &#39;機械&#39;: 1, &#39;モデル&#39;: 1, &#39;開発&#39;: 1, &#39;自動&#39;: 1, &#39;分析&#39;: 1, &#39;化&#39;: 1}, {&#39;NTT&#39;: 1, &#39;無線&#39;: 1, &#39;策&#39;: 1, &#39;ウー&#39;: 1, &#39;予測&#39;: 1, &#39;ドコモ&#39;: 1, &#39;AI&#39;: 1, &#39;バー&#39;: 1, &#39;需要&#39;: 1, &#39;タクシー&#39;: 1, &#39;東京&#39;: 1, &#39;対抗&#39;: 1}, {&#39;稼働&#39;: 1, &#39;用&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;夏&#39;: 1, &#39;東工大&#39;: 1, &#39;スパコン&#39;: 1, &#39;ごろ&#39;: 1}, {&#39;20&#39;: 1, &#39;投資&#39;: 1, &#39;売上&#39;: 1, &#39;400&#39;: 1, &#39;年度&#39;: 1, &#39;円&#39;: 2, &#39;億&#39;: 2, &#39;100&#39;: 1, &#39;高&#39;: 1, &#39;家電&#39;: 1, &#39;オンキヨー&#39;: 1}, {&#39;.&#39;: 2, &#39;Ver&#39;: 1, &#39;0&#39;: 1, &#39;Google&#39;: 1, &#39;化&#39;: 1, &#39;柔軟&#39;: 1, &#39;TensorFlow&#39;: 1, &#39;追加&#39;: 1, &#39;API&#39;: 1, &#39;ライブラリ&#39;: 1, &#39;AI&#39;: 1, &#39;高速&#39;: 1, &#39;1&#39;: 1}, {&#39;独&#39;: 1, &#39;ワトソン&#39;: 1, &#39;ＩＢＭ&#39;: 1, &#39;ＩｏＴ&#39;: 1, &#39;ボッシュ&#39;: 1, &#39;活用&#39;: 1, &#39;提携&#39;: 1}, {&#39;サービス&#39;: 1, &#39;マイクロソフト&#39;: 1, &#39;ため&#39;: 1, &#39;ロボット&#39;: 1, &#39;AI&#39;: 1, &#39;接客&#39;: 1, &#39;ウド&#39;: 1, &#39;クラ&#39;: 1}, {&#39;提案&#39;: 1, &#39;通販&#39;: 1, &#39;クロ&#39;: 1, &#39;ＡＩ&#39;: 1, &#39;ユニ&#39;: 1, &#39;商品&#39;: 1, &#39;ネット&#39;: 1, &#39;実験&#39;: 1, &#39;米&#39;: 1}, {&#39;ソース&#39;: 1, &#39;学習&#39;: 1, &#39;シミュレーター&#39;: 1, &#39;AI&#39;: 1, &#39;オープン&#39;: 1, &#39;Microsoft&#39;: 1, &#39;ローン&#39;: 1, &#39;公開&#39;: 1, &#39;&#34;&#39;: 2}, {&#39;IBM&#39;: 1, &#39;コンテンツ&#39;: 1, &#39;管理&#39;: 1, &#39;ツール&#39;: 1, &#39;Watson&#39;: 2, &#39;発表&#39;: 1, &#39;Hub&#39;: 1, &#39;活用&#39;: 1, &#39;Content&#39;: 1}, {&#39;日本&#39;: 1, &#39;サービス&#39;: 1, &#39;SBI&#39;: 1, &#39;マイクロソフト&#39;: 1, &#39;グループ&#39;: 1, &#39;知能&#39;: 1, &#39;活用&#39;: 1, &#39;FX&#39;: 1, &#39;人工&#39;: 1}, {&#39;官民&#39;: 1, &#39;技術&#39;: 1, &#39;先進&#39;: 1, &#39;設立&#39;: 1, &#39;型&#39;: 1, &#39;AI&#39;: 1, &#39;研究&#39;: 1, &#39;連携&#39;: 1, &#39;ラボ&#39;: 1}, {&#39;技術&#39;: 1, &#39;可視&#39;: 1, &#39;開始&#39;: 1, &#39;チャット&#39;: 1, &#39;エネルギー&#39;: 1, &#39;化&#39;: 2, &#39;事業&#39;: 1, &#39;サービス&#39;: 1, &#39;特&#39;: 1, &#39;提供&#39;: 1, &#39;人工&#39;: 1, &#39;問い合わせ&#39;: 1, &#39;知能&#39;: 1, &#39;AI&#39;: 2, &#39;内容&#39;: 1, &#39;者&#39;: 1, &#39;融合&#39;: 1}, {&#39;知能&#39;: 1, &#39;研究所&#39;: 1, &#39;設立&#39;: 1, &#39;学習&#39;: 1, &#39;機械&#39;: 1, &#39;制作&#39;: 1, &#39;人工&#39;: 1, &#39;/&#39;: 1, &#39;セレス&#39;: 1, &#39;開発&#39;: 1, &#39;アプリ&#39;: 1, &#39;サイエンス&#39;: 1, &#39;AI&#39;: 2, &#39;株式会社&#39;: 1, &#39;共同&#39;: 1, &#39;ビジネス&#39;: 1, &#39;ラボ&#39;: 1}, {&#39;テクノロジー&#39;: 1, &#39;知能&#39;: 1, &#39;活用&#39;: 1, &#39;連携&#39;: 1, &#39;産学&#39;: 1, &#39;サイバー&#39;: 1, &#39;AI&#39;: 1, &#39;東京工業大学&#39;: 1, &#39;アド&#39;: 1, &#39;人工&#39;: 1, &#39;Lab&#39;: 1}]
 </pre>
 </div>
 </div>
@@ -11910,8 +12127,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">newlist</span><span class="p">)</span>
-<span class="n">df</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_vector_pd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">word_vector_list</span><span class="p">)</span>
+<span class="n">word_vector_pd</span>
 </pre></div>
 
 </div>
@@ -11930,27 +12147,27 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>うねり</th>
-      <th>おれ</th>
-      <th>お前</th>
-      <th>こと</th>
-      <th>この世</th>
-      <th>これら</th>
-      <th>そこ</th>
-      <th>それら</th>
-      <th>たち</th>
-      <th>もの</th>
+      <th>"</th>
+      <th>.</th>
+      <th>/</th>
+      <th>0</th>
+      <th>1</th>
+      <th>100</th>
+      <th>20</th>
+      <th>2017</th>
+      <th>2030</th>
+      <th>400</th>
       <th>...</th>
-      <th>死に際</th>
-      <th>海</th>
-      <th>海賊</th>
-      <th>王</th>
-      <th>男</th>
-      <th>目</th>
-      <th>答え</th>
-      <th>自由</th>
-      <th>財宝</th>
-      <th>限り</th>
+      <th>魔法つかい</th>
+      <th>％</th>
+      <th>－</th>
+      <th>１</th>
+      <th>４</th>
+      <th>７</th>
+      <th>ＡＩ</th>
+      <th>ＩＢＭ</th>
+      <th>ＩｏＴ</th>
+      <th>ＬＩＮＥ</th>
     </tr>
   </thead>
   <tbody>
@@ -11960,7 +12177,7 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -11969,9 +12186,9 @@ div#notebook {
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -11991,13 +12208,13 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>1.0</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12005,12 +12222,12 @@ div#notebook {
     <tr>
       <th>2</th>
       <td>NaN</td>
-      <td>1.0</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12019,11 +12236,11 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -12041,7 +12258,7 @@ div#notebook {
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12052,16 +12269,16 @@ div#notebook {
     </tr>
     <tr>
       <th>4</th>
-      <td>1.0</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12079,24 +12296,24 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
       <td>1.0</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>6</th>
@@ -12105,6 +12322,78 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12116,14 +12405,446 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
       <td>NaN</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>10</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>28</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>1.0</td>
@@ -12132,8 +12853,32 @@ div#notebook {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.0</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12148,7 +12893,7 @@ div#notebook {
     </tr>
   </tbody>
 </table>
-<p>8 rows × 41 columns</p>
+<p>30 rows × 217 columns</p>
 </div>
 </div>
 
@@ -12163,7 +12908,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">newlist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">site_csv</span><span class="p">,</span> <span class="n">word_vector_pd</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">newlist</span>
 </pre></div>
 
 </div>
@@ -12182,37 +12928,818 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>うねり</th>
-      <th>おれ</th>
-      <th>お前</th>
-      <th>こと</th>
-      <th>この世</th>
-      <th>これら</th>
-      <th>そこ</th>
-      <th>それら</th>
-      <th>たち</th>
-      <th>もの</th>
+      <th>flg</th>
+      <th>date</th>
+      <th>url</th>
+      <th>title</th>
+      <th>"</th>
+      <th>.</th>
+      <th>/</th>
+      <th>0</th>
+      <th>1</th>
+      <th>100</th>
       <th>...</th>
-      <th>死に際</th>
-      <th>海</th>
-      <th>海賊</th>
-      <th>王</th>
-      <th>男</th>
-      <th>目</th>
-      <th>答え</th>
-      <th>自由</th>
-      <th>財宝</th>
-      <th>限り</th>
+      <th>魔法つかい</th>
+      <th>％</th>
+      <th>－</th>
+      <th>１</th>
+      <th>４</th>
+      <th>７</th>
+      <th>ＡＩ</th>
+      <th>ＩＢＭ</th>
+      <th>ＩｏＴ</th>
+      <th>ＬＩＮＥ</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://style.nikkei.com/article/DGXMZO12054150...</td>
+      <td>AIとスポーツの融合　カギは「レジェンドの知」継承</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.nikkei.com/article/DGKKZO12543610U7...</td>
+      <td>〈法トーク〉フィンテック・ＡＩ関連に意欲 弁護士　岩倉正和氏</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>2016/02/01</td>
+      <td>http://www.nikkei.com/article/DGKKASFK25H41_R3...</td>
+      <td>ＡＩ特許 ４年で７割増　米中突出 日本は減</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>2016/01/31</td>
+      <td>http://www.nikkei.com/article/DGKKZO12336510R3...</td>
+      <td>人工知能の使い方</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.excite.co.jp/News/column_g/20170206...</td>
+      <td>人類が危ない！？滅ぼされないための正しい人工知能との付き合い方</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>http://www.gizmodo.jp/2017/02/lets-see-how-pai...</td>
+      <td>人が塗る時代は過去になるのか？ 人工知能が『魔法つかいプリキュア！』を塗る</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>https://www.bloomberg.co.jp/news/articles/2017...</td>
+      <td>100％人工知能のヘッジファンド誕生－株取引に人間の感情は邪魔か</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://thebridge.jp/2017/02/how-ai-will-transf...</td>
+      <td>人工知能による会話型教育が浸透するかーー2017年、AIは教育業界をどう変えるか？</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>http://dd.hokkaido-np.co.jp/news/science/scien...</td>
+      <td>人工知能・AIによる人事評価は公平か－北海道大学の裁判劇とワークショップから　１－舞台は西暦...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>https://www.advertimes.com/20170204/article243...</td>
+      <td>松尾先生、人工知能と広告の未来はどっちですか？【後編】</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>2017/02/23</td>
+      <td>http://www.nikkei.com/article/DGXLASDZ22HST_S7...</td>
+      <td>イオン、従業員の質問にＡＩが回答　接客能力高める</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>2017/02/22</td>
+      <td>http://www.nikkei.com/article/DGXLASFB06HLT_S7...</td>
+      <td>高速道の除雪、ＡＩで効率化　東日本高速</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>2017/02/21</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02210...</td>
+      <td>ミツバグループ、グローバル53社の人事評価でAI活用</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.nikkei.com/article/DGXLZO13144060Q7...</td>
+      <td>ローソン、健康志向に応じ商品提案　ＬＩＮＥでＡＩが対応</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02200...</td>
+      <td>機械学習を中堅中小にも、PBCがERP「Dynamics NAV」新版</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>分析モデルの開発、展開を機械学習で自動化　IBMが提供へ</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>NTTドコモと東京無線が“ウーバー対抗策”、AIでタクシー需要を予測</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLASGG18H15_Z1...</td>
+      <td>ＡＩ用スパコン、夏ごろから稼働　東工大</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLZO13104170Z1...</td>
+      <td>オンキヨー、ＡＩ家電に100億円投資　20年度に売上高400億円</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>GoogleのAIライブラリ「TensorFlow」がVer.1.0に　高速化してより柔軟に...</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLASGM17H8D_X1...</td>
+      <td>独ボッシュ、ＩＢＭとＩｏＴで提携　ワトソン活用</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>マイクロソフト、AIとロボットで接客するためのクラウドサービス</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLZO13076690X1...</td>
+      <td>ユニクロのネット通販、ＡＩがお薦め商品提案　米で実験</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>Microsoft、"ドローンのAI学習シミュレーターをオープンソース公開"</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>IBM、Watson活用のコンテンツ管理ツール「Watson Content Hub」を発表</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://news.mynavi.jp/news/2017/02/15/183/</td>
+      <td>人工知能を活用したFXサービスを目指して日本マイクロソフトとSBIグループ</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://monoist.atmarkit.co.jp/mn/articles/1702...</td>
+      <td>官民が連携し、先進型AI技術の研究ラボを設立</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.sankeibiz.jp/business/news/170215/p...</td>
+      <td>問い合わせ内容の可視化と人工知能（AI）技術を融合エネルギー事業者に特化したAIチャットサー...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.jiji.com/jc/article?k=000000069.000...</td>
+      <td>アプリ開発/制作のゆめみ、株式会社セレスと人工知能（AI）及び機械学習に関する研究所、 ビジ...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://venturetimes.jp/venture-news/ai/17506.html</td>
+      <td>サイバーの人工知能のアドテクノロジー活用を図る「AI Lab」、東京工業大学と産学連携</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>30 rows × 221 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">newlist</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+<span class="n">newlist</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>flg</th>
+      <th>date</th>
+      <th>url</th>
+      <th>"</th>
+      <th>.</th>
+      <th>/</th>
+      <th>0</th>
+      <th>1</th>
+      <th>100</th>
+      <th>20</th>
+      <th>...</th>
+      <th>魔法つかい</th>
+      <th>％</th>
+      <th>－</th>
+      <th>１</th>
+      <th>４</th>
+      <th>７</th>
+      <th>ＡＩ</th>
+      <th>ＩＢＭ</th>
+      <th>ＩｏＴ</th>
+      <th>ＬＩＮＥ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://style.nikkei.com/article/DGXMZO12054150...</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12221,9 +13748,9 @@ div#notebook {
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12232,9 +13759,9 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.nikkei.com/article/DGKKZO12543610U7...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12243,26 +13770,26 @@ div#notebook {
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>0</td>
+      <td>2016/02/01</td>
+      <td>http://www.nikkei.com/article/DGKKASFK25H41_R3...</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12271,18 +13798,18 @@ div#notebook {
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0</td>
+      <td>2016/01/31</td>
+      <td>http://www.nikkei.com/article/DGKKZO12336510R3...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12293,7 +13820,7 @@ div#notebook {
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12304,16 +13831,16 @@ div#notebook {
     </tr>
     <tr>
       <th>4</th>
-      <td>1.0</td>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://www.excite.co.jp/News/column_g/20170206...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12328,54 +13855,561 @@ div#notebook {
     </tr>
     <tr>
       <th>5</th>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>http://www.gizmodo.jp/2017/02/lets-see-how-pai...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
       <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>https://www.bloomberg.co.jp/news/articles/2017...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>1.0</td>
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>1.0</td>
       <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>0</td>
+      <td>2016/02/06</td>
+      <td>http://thebridge.jp/2017/02/how-ai-will-transf...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>2016/02/07</td>
+      <td>http://dd.hokkaido-np.co.jp/news/science/scien...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>2016/02/04</td>
+      <td>https://www.advertimes.com/20170204/article243...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>2017/02/23</td>
+      <td>http://www.nikkei.com/article/DGXLASDZ22HST_S7...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>2017/02/22</td>
+      <td>http://www.nikkei.com/article/DGXLASFB06HLT_S7...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>2017/02/21</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02210...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.nikkei.com/article/DGXLZO13144060Q7...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02200...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1</td>
+      <td>2017/02/20</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLASGG18H15_Z1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>2017/02/19</td>
+      <td>http://www.nikkei.com/article/DGXLZO13104170Z1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLASGM17H8D_X1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://itpro.nikkeibp.co.jp/atcl/news/17/02170...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1</td>
+      <td>2017/02/17</td>
+      <td>http://www.nikkei.com/article/DGXLZO13076690X1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1</td>
+      <td>2017/02/16</td>
+      <td>http://www.itmedia.co.jp/enterprise/articles/1...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://news.mynavi.jp/news/2017/02/15/183/</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://monoist.atmarkit.co.jp/mn/articles/1702...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.sankeibiz.jp/business/news/170215/p...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://www.jiji.com/jc/article?k=000000069.000...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
@@ -12383,9 +14417,30 @@ div#notebook {
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>...</td>
       <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1</td>
+      <td>2017/02/15</td>
+      <td>http://venturetimes.jp/venture-news/ai/17506.html</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12400,12 +14455,25 @@ div#notebook {
     </tr>
   </tbody>
 </table>
-<p>8 rows × 41 columns</p>
+<p>30 rows × 220 columns</p>
 </div>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">newlist</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;output.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
 </div>
 </div>
 
